@@ -1,0 +1,283 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* NAVBAR */
+
+
+.navbar {
+    position: relative;
+    top: 0%;
+    /* background-color: rgb(248, 246, 246); */
+    background-color: #A8DF8E;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 90px;
+    box-shadow: 0px -10px 30px 10px black;
+    z-index: 1;
+}
+.navbar .logo{
+    width: 150px;
+    height: 60px;   
+
+}
+.navbar .logo img {
+    object-fit: inherit;
+    width: 150px;
+    height: 60px;   
+    mix-blend-mode: difference;
+}
+
+.navbar.navlist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navlist ul {
+    display: flex;
+    padding-top: 6px;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+    list-style: none;
+}
+
+a {
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+
+.navlist .nav-btn {
+    padding: 5px 20px;
+    font-size: 15px;
+    border-radius: 12px;
+    cursor: default;
+    background-color: blue;
+    color: white;
+    font-weight: 700;
+    border: none;
+}
+
+.navlist .nav-btn-logout {
+    padding: 5px 20px;
+    font-size: 15px;
+    border-radius: 12px;
+    cursor: default;
+    background-color: red;
+    color: white;
+    font-weight: 700;
+    border: none;
+
+    & a {
+        color: white;
+
+    }
+}
+
+.nav-btn a {
+    color: white;
+
+}
+
+
+.heading {
+    width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 30px;
+}
+
+/* navbar */
+
+
+
+
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+ 
+    min-height: 100vh;
+    padding: 20px 100px;
+    box-sizing: border-box;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 20px;
+    text-align: center;
+    border: 3px solid rgb(18, 122, 5);
+    font-weight: 600;
+    
+}
+thead td{
+    border: 5px solid rgb(12, 121, 19);
+    font-size: 20px;
+    font-weight:700;
+    text-transform: capitalize;
+    padding: 1px;
+}
+td{
+    text-transform: uppercase;
+}
+
+img {
+    /* width:100%; */
+    height: 100px;
+    object-fit: cover;
+}
+
+input {
+    width: 50px;
+    height: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.r-btn {
+    padding: 10px;
+    background-color: red;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    width: 8rem;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+/* NAVBAR END */
+
+
+
+
+.home-info{
+    width: 100%;
+    height: 50vh;
+    background-color:aliceblue;
+    /* box-shadow: 0px -10px 50px 20px rgb(129, 128, 128); */
+    display: flex;
+    align-content: center;
+    /* padding: 0px 100px; */
+    justify-content: space-between;
+}
+
+.home-image{
+    width: 40%;
+    height: 100%;
+
+
+    & img{
+        width: 100%;
+        height: inherit;
+        border-radius: 0px 30px 30px 0;
+    }
+
+}
+.home-desc{
+    width: 50%;
+    height: inherit;
+    /* margin-right: 60px; */
+    padding: 40px 40px 80px 0px;
+}
+.home-desc h1,h2,h3{
+    margin: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+
+}
+.home-desc h1{
+    font-size: 44px;
+    letter-spacing: 5px;
+}
+
+
+    /* CARDS */
+
+.heading{
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 20%;
+    background-color:azure;
+}
+.rows{
+    width: 100%;
+    padding: 50px 20px 30px 0px ;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    background-color:azure;
+    
+
+
+    & .card{
+        width: 300px;
+        border-radius: 20px ;
+        height: 400px;
+        box-shadow: 5px 4px 50px 1px black;   
+        margin-left: 30px;   
+        
+    }
+
+    & .image img{
+        width: 100%;
+        height: 50%;
+        border-radius: 20px 20px 0 0;
+        
+    }
+
+    & .summary{
+        padding: 10px 20px 10px 20px ;
+        display: flex;
+        height: 11rem;
+        flex-direction: column;
+        align-items:center;
+        justify-content:space-between;
+
+        & .summary-1{
+            display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+
+
+    & h2,h3,p{
+        margin: 0px;
+
+    }
+        }
+
+        & .cart-btn button{
+            width: 12rem;
+            padding: 7px 10px;
+            border:none;
+            background-color: rgb(253, 60, 60);
+            color: white;
+            border-radius: 30px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+    }
+
+}
+
+    /* CARDS END */

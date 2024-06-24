@@ -1,0 +1,152 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background-color:aliceblue;
+
+}
+.navbar {
+    background-color: #A8DF8E;
+    box-shadow: 0px 0px 30px 10px black;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    padding: 4px 90px;
+}
+
+.navbar-brand {
+    mix-blend-mode: difference;
+}
+
+.home-section {
+    width: 100%;
+    /* overflow: scroll; */
+    
+}
+
+.homes {
+    
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    padding-top: 50px;
+    
+    & h1 {
+        /* color: white; */
+        text-shadow: 0px 0 10px rgb(95, 241, 47),0px 0 10px rgb(95, 241, 47),0px 0 10px rgb(95, 241, 47);
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 3px;
+        
+        padding: 0 0 5px 0;
+        font-weight: 700;
+        display: inline-block;
+        border-bottom: 4px solid green;
+        letter-spacing: 7px;
+    }
+    
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.home-cards {
+    height:calc(100vh - 193px) ;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    gap: 14px;
+    
+}
+input{
+    text-transform:uppercase;
+}
+
+
+.main-card {
+    width: 48%;
+    height: 300px;
+    display: flex;
+    margin: 10px;
+    border: 2px solid red;
+    border-radius: 20px;
+    color: red;
+    /* flex-wrap: wrap; */
+    
+    & .image {
+        width: 40%;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        
+        & img{
+            width:100%;
+            height: 300px;
+            border-radius: 20px;
+        }
+    }
+
+    & .home-content {
+        border-radius: 20px;
+        width: 60%;
+        /* background-color: rgb(84, 172, 239); */
+        padding: 10px 20px 0 30px;
+        text-transform: capitalize;
+
+    }
+
+
+}
+
+.home-content {
+
+    & h2 {
+        letter-spacing: 2px;
+        text-shadow: -5px 1px 3px white;
+        font-weight: 700;
+    }
+    
+    & p{
+        font-size:17px;
+        letter-spacing: 1px;
+        text-align: justify;
+        margin-top: 20px;
+        color: black;
+        font-weight: 600;
+
+    }
+
+    & h3{
+        letter-spacing: 1px;
+        text-shadow: -2px 1px 3px violet;
+        font-weight: 700;
+        text-wrap: wrap;
+        margin-top: 60px;
+        padding-bottom: 20px;
+    }
+
+    button{
+        padding: 11px;
+        background-color: orange;
+        border-radius: 30px;
+        color: white;
+        font-weight: 800;
+        border: none;
+        width: 100%;
+
+        &:hover{
+            background-color: rgb(145, 246, 145);
+        }
+    }
+
+}
+
+
+
